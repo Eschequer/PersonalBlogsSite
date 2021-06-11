@@ -28,7 +28,7 @@ export default async function handler(req, res) {
 
     try {
       client = await MongoClient.connect(
-        `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_clustername}.er2t4.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`
+        `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_cluster}.er2t4.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`
       );
     } catch (e) {
       console.log(e);
